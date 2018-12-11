@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
-                            <tableViewSection headerTitle="관리소속" id="DVL-1U-a9C">
+                            <tableViewSection headerTitle="관리기관" id="DVL-1U-a9C">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="apW-eA-1Sl">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -97,7 +97,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="타입" id="OUL-JL-J5k">
+                            <tableViewSection headerTitle="형태" id="OUL-JL-J5k">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TCn-8f-ARj">
                                         <rect key="frame" x="0.0" y="172" width="375" height="44"/>
@@ -125,7 +125,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="jlF-Cf-sQN">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="wM3-RF-Y5K">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="marker-30" id="wM3-RF-Y5K">
                             <connections>
                                 <action selector="navi:" destination="fQl-E2-gOd" id="xtu-zq-Af3"/>
                             </connections>
@@ -160,4 +160,7 @@
             <point key="canvasLocation" x="197.59999999999999" y="792.95352323838085"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="marker-30" width="30" height="30"/>
+    </resources>
 </document>
