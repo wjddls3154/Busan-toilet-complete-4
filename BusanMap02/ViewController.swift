@@ -125,7 +125,8 @@ class ViewController: UIViewController, MKMapViewDelegate, XMLParserDelegate, CL
             let toiletName = item["toiletName"]
             let insname = item["instName"]
             let types = item["type"]
-            annotation = BusanData(coordinate: CLLocationCoordinate2D(latitude: dLat!, longitude: dLong!), title: insname!, subtitle: toiletName!, openTime: tOpenTime!, type: types!, toiletName: tn!, lat: dLat!, long: dLong!)
+            let tels = item["tel"]
+            annotation = BusanData(coordinate: CLLocationCoordinate2D(latitude: dLat!, longitude: dLong!), title: insname!, subtitle: toiletName!, openTime: tOpenTime!, type: types!, toiletName: toiletName!, lat: dLat!, long: dLong!, tel: tels!, instName: insname!)
 
             annotations.append(annotation!)
         }

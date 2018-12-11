@@ -19,9 +19,10 @@ class BusanData: NSObject, MKAnnotation {
     var toiletName: String?
     var lat: Double?
     var long: Double?
-   
+    var tel: String?
+    var instName: String?
     
-    init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, openTime: String, type: String, toiletName: String, lat: Double, long: Double) {
+    init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, openTime: String, type: String, toiletName: String, lat: Double, long: Double, tel: String, instName: String) {
         self.coordinate = coordinate
         self.title = title
         self.subtitle = subtitle
@@ -29,7 +30,10 @@ class BusanData: NSObject, MKAnnotation {
         self.openTime = openTime
         self.type = type
         self.lat = lat
-        self.long = long        
+        self.long = long
+        self.tel = tel
+        self.instName = instName
+        
     }
     
     func mapItem() -> MKMapItem

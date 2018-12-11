@@ -14,6 +14,8 @@ class DetailViewController: UITableViewController, MKMapViewDelegate {
     @IBOutlet var lblAddr: UILabel!
     @IBOutlet var lbldetailAddr: UILabel!
     @IBOutlet var lblCapcity: UILabel!
+    @IBOutlet var lblName: UILabel!
+    @IBOutlet var lblCall: UILabel!
     
     var selectedForDetail: BusanData?
     
@@ -24,16 +26,19 @@ class DetailViewController: UITableViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      let title = selectedForDetail?.title
+      let title = selectedForDetail?.instName
       let open = selectedForDetail?.openTime
       let type = selectedForDetail?.type
         print("title = \(title)")
+      let toiletName = selectedForDetail?.toiletName
+      let tel = selectedForDetail?.tel
         
         
         lblAddr.text = title
         lbldetailAddr.text = open
         lblCapcity.text = type
-        
+        lblName.text = toiletName
+        lblCall.text = tel
     }
     
     @IBAction func navi(_ sender: Any) {
